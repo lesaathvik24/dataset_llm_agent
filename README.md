@@ -1,6 +1,4 @@
-<u>
 **Dataset Creation AI Agent**
-</u>
 <br />
 This repository contains a Dockerized AI Agent designed to facilitate the creation of large datasets for LLM (Large Language Model) fine-tuning. The agent leverages the capabilities of Claude-3-5-Sonnet-20240620, a powerful language model from Anthropic, to automate the otherwise complex and labor-intensive task of dataset creation.
 <br />
