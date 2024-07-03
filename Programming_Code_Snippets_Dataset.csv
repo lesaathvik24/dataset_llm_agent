@@ -1,0 +1,101 @@
+Snippet ID,Language,Snippet,Description,Complexity
+1,Python,"print(""Hello, World!"")","Prints Hello, World!",Easy
+2,JavaScript,"console.log(""Hello, World!"")","Prints Hello, World!",Easy
+3,Java,"System.out.println(""Hello, World!"");","Prints Hello, World!",Easy
+4,C++,"#include <iostream>
+int main() {
+    std::cout << ""Hello, World!"";
+    return 0;
+}","Prints Hello, World!",Easy
+5,Ruby,"puts ""Hello, World!""","Prints Hello, World!",Easy
+6,Python,"def add(a, b):
+    return a + b",Adds two numbers,Easy
+7,JavaScript,"function add(a, b) {
+    return a + b;
+}",Adds two numbers,Easy
+8,Java,"int add(int a, int b) {
+    return a + b;
+}",Adds two numbers,Easy
+9,C++,"int add(int a, int b) {
+    return a + b;
+}",Adds two numbers,Easy
+10,Ruby,"def add(a, b)
+    a + b
+end",Adds two numbers,Easy
+11,Python,"for i in range(5):
+    print(i)",Prints numbers from 0 to 4,Medium
+12,JavaScript,"for(let i = 0; i < 5; i++) {
+    console.log(i);
+}",Prints numbers from 0 to 4,Medium
+13,Java,"for(int i = 0; i < 5; i++) {
+    System.out.println(i);
+}",Prints numbers from 0 to 4,Medium
+14,C++,"for(int i = 0; i < 5; i++) {
+    std::cout << i;
+}",Prints numbers from 0 to 4,Medium
+15,Ruby,5.times { |i| puts i },Prints numbers from 0 to 4,Medium
+16,Python,"a = [1, 2, 3]
+for x in a:
+    print(x)",Iterates over a list and prints each element,Medium
+17,JavaScript,"let a = [1, 2, 3];
+a.forEach(x => console.log(x));",Iterates over a list and prints each element,Medium
+18,Java,"int[] a = {1, 2, 3};
+for(int x : a) {
+    System.out.println(x);
+}",Iterates over a list and prints each element,Medium
+19,C++,"int a[] = {1, 2, 3};
+for(int i = 0; i < 3; i++) {
+    std::cout << a[i];
+}",Iterates over a list and prints each element,Medium
+20,Ruby,"a = [1, 2, 3]
+a.each { |x| puts x }",Iterates over a list and prints each element,Medium
+21,Python,"try:
+    print(1 / 0)
+except ZeroDivisionError:
+    print(""Division by zero!"")",Handles division by zero exception,Hard
+22,JavaScript,"try {
+    console.log(1 / 0);
+} catch(e) {
+    console.log(""Division by zero!"");
+}",Handles division by zero exception,Hard
+23,Java,"try {
+    System.out.println(1 / 0);
+} catch (ArithmeticException e) {
+    System.out.println(""Division by zero!"");
+}",Handles division by zero exception,Hard
+24,C++,"try {
+    std::cout << 1 / 0;
+} catch (const std::exception& e) {
+    std::cout << ""Division by zero!"";
+}",Handles division by zero exception,Hard
+25,Ruby,"begin
+    puts 1 / 0
+rescue ZeroDivisionError
+    puts ""Division by zero!""
+end",Handles division by zero exception,Hard
+26,Python,"with open(""file.txt"", ""r"") as file:
+    print(file.read())",Reads content from a file and prints it,Hard
+27,JavaScript,"const fs = require(""fs"");
+fs.readFile(""file.txt"", ""utf8"", (err, data) => {
+    if (err) throw err;
+    console.log(data);
+});",Reads content from a file and prints it,Hard
+28,Java,"BufferedReader reader = new BufferedReader(new FileReader(""file.txt""));
+String line;
+while ((line = reader.readLine()) != null) {
+    System.out.println(line);
+}",Reads content from a file and prints it,Hard
+29,C++,"#include <fstream>
+#include <iostream>
+
+int main() {
+    std::ifstream file(""file.txt"");
+    std::string line;
+    while (std::getline(file, line)) {
+        std::cout << line << std::endl;
+    }
+    return 0;
+}",Reads content from a file and prints it,Hard
+30,Ruby,"File.open(""file.txt"", ""r"") do |file|
+    puts file.read
+end",Reads content from a file and prints it,Hard
